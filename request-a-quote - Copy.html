@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Quote | Leye Auto Group LLC</title>
+<meta name="description" content="Request a quote from Leye Auto Group LLC for vehicle sourcing, spare parts, or USA-to-Nigeria shipping.">
+<link rel="canonical" href="https://leyeautogroup.com/request-a-quote.html">
+<meta property="og:title" content="Request a Quote | Leye Auto Group LLC">
+<meta property="og:description" content="Submit a detailed request for vehicle sourcing, spare parts, or shipping.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leyeautogroup.com/request-a-quote.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%23101B2B'/%3E%3Cpath d='M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13M3 13v4h18v-4M3 13h18' stroke='%23C73535' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{--navy:#101B2B;--charcoal:#202833;--white:#FFFFFF;--light:#F3F5F7;--silver:#B8C0C9;--red:#C73535;--red-dark:#a32b2b;--radius:10px;--shadow:0 10px 30px rgba(16,27,43,0.12);--transition:0.25s ease;}
+*,*::before,*::after{box-sizing:border-box;}
+body{margin:0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;color:var(--charcoal);background:var(--white);line-height:1.6;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3{color:var(--navy);margin:0 0 .5em;}
+p{margin:0 0 1em;}
+.container{max-width:1100px;margin:0 auto;padding:0 20px;}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px;}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--red);color:#fff;padding:10px 16px;z-index:2000;}
+.skip-link:focus{left:0;top:0;}
+header.site-header{position:sticky;top:0;z-index:1000;background:var(--navy);box-shadow:var(--shadow);}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:1.1rem;}
+.logo small{display:block;font-size:.58rem;letter-spacing:1.5px;color:var(--silver);font-weight:400;}
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+nav.primary-nav{display:flex;gap:2px;}
+nav.primary-nav a{color:var(--silver);padding:10px 13px;border-radius:6px;font-size:.92rem;font-weight:500;transition:var(--transition);white-space:nowrap;}
+nav.primary-nav a:hover,nav.primary-nav a:focus-visible{color:#fff;background:rgba(255,255,255,.08);}
+nav.primary-nav a[aria-current="page"]{color:#fff;background:var(--red);}
+@media (max-width:980px){
+  nav.primary-nav{position:fixed;top:0;right:0;height:100vh;width:min(300px,85vw);background:var(--navy);flex-direction:column;padding:90px 22px 22px;transform:translateX(100%);transition:transform .3s ease;gap:4px;overflow-y:auto;}
+  nav.primary-nav.open{transform:translateX(0);}
+  .menu-toggle{display:flex;}
+}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:8px;font-weight:600;font-size:.95rem;cursor:pointer;border:2px solid transparent;transition:var(--transition);}
+.btn-primary{background:var(--red);color:#fff;}
+.btn-primary:hover{background:var(--red-dark);}
+.btn-outline{background:transparent;border-color:var(--navy);color:var(--navy);}
+.btn-outline:hover{background:var(--navy);color:#fff;}
+.page-hero{background:var(--navy);color:#fff;padding:60px 0 40px;}
+.page-hero p{color:var(--silver);max-width:650px;}
+section{padding:50px 0;}
+.layout{display:grid;grid-template-columns:1fr;gap:30px;}
+@media(min-width:900px){.layout{grid-template-columns:1fr 320px;}}
+form.quote-form{background:#fff;border:1px solid #e7e9ec;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);}
+.type-selector{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px;}
+.type-selector label{flex:1;min-width:140px;text-align:center;border:2px solid #cfd5dc;border-radius:8px;padding:12px;cursor:pointer;font-size:.88rem;font-weight:600;color:var(--navy);transition:var(--transition);}
+.type-selector input{position:absolute;opacity:0;pointer-events:none;}
+.type-selector input:checked + span{color:#fff;}
+.type-selector label:has(input:checked){background:var(--red);border-color:var(--red);color:#fff;}
+.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+@media(max-width:650px){.field-grid{grid-template-columns:1fr;}}
+.field{margin-bottom:0;}
+.field.full{grid-column:1/-1;}
+label{display:block;font-size:.85rem;font-weight:600;color:var(--navy);margin-bottom:6px;}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:6px;font-size:.92rem;font-family:inherit;}
+textarea{resize:vertical;min-height:100px;}
+.required::after{content:" *";color:var(--red);}
+.error-msg{color:var(--red);font-size:.8rem;display:none;margin-top:4px;}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--red);}
+.field.invalid .error-msg{display:block;}
+.conditional-group{display:none;}
+.conditional-group.active{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;}
+@media(max-width:650px){.conditional-group.active{grid-template-columns:1fr;}}
+.sidebar{background:var(--light);border-radius:var(--radius);padding:24px;height:fit-content;}
+.sidebar h3{font-size:1rem;}
+.sidebar p{font-size:.88rem;}
+.fallback-panel{display:none;background:var(--light);border:1px dashed var(--silver);border-radius:8px;padding:20px;margin-top:20px;}
+.fallback-panel.show{display:block;}
+.fallback-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
+footer.site-footer{background:var(--charcoal);color:var(--silver);padding:50px 0 20px;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;}
+.footer-grid h3{color:#fff;font-size:1.02rem;margin-bottom:14px;}
+.footer-grid a{display:block;color:var(--silver);padding:4px 0;font-size:.92rem;}
+.footer-grid a:hover{color:#fff;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:20px;text-align:center;font-size:.83rem;}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);z-index:900;}
+.whatsapp-float:hover{transform:scale(1.08);}
+@media(max-width:480px){.whatsapp-float{width:48px;height:48px;bottom:14px;right:14px;}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo" aria-label="Leye Auto Group LLC home">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13M3 13v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5M3 13h18" stroke="#C73535" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="17.5" r="1.4" fill="#F3F5F7"/><circle cx="16.5" cy="17.5" r="1.4" fill="#F3F5F7"/></svg>
+      <span>LEYE AUTO GROUP<small>LLC
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="spare-parts.html">Spare Parts</a>
+      <a href="shipping.html">Shipping &amp; Export</a>
+      <a href="request-a-quote.html" aria-current="page">Request a Quote</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Request a Quote</h1>
+      <p>Tell us what you need — a vehicle, spare parts, shipping, or a general enquiry — and we will respond with next steps.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container layout">
+      <div>
+        <form class="quote-form" id="quoteForm" novalidate action="https://formspree.io/f/REPLACE_WITH_REAL_ENDPOINT" method="POST">
+          <label class="required">What do you need help with?</label>
+          <div class="type-selector">
+            <label><input type="radio" name="requestType" value="Vehicle sourcing" checked><span>Vehicle Sourcing</span></label>
+            <label><input type="radio" name="requestType" value="Spare-parts sourcing"><span>Spare Parts</span></label>
+            <label><input type="radio" name="requestType" value="Shipping enquiry"><span>Shipping Enquiry</span></label>
+            <label><input type="radio" name="requestType" value="General enquiry"><span>General Enquiry</span></label>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label class="required" for="qName">Full Name</label>
+              <input type="text" id="qName" name="name" required>
+              <div class="error-msg">Please enter your full name.</div>
+            </div>
+            <div class="field">
+              <label class="required" for="qEmail">Email Address</label>
+              <input type="email" id="qEmail" name="email" required>
+              <div class="error-msg">Please enter a valid email address.</div>
+            </div>
+            <div class="field">
+              <label class="required" for="qPhone">Telephone Number</label>
+              <input type="tel" id="qPhone" name="phone" required>
+              <div class="error-msg">Please enter your telephone number.</div>
+            </div>
+            <div class="field">
+              <label class="required" for="qCountry">Country of Residence</label>
+              <input type="text" id="qCountry" name="country" required>
+              <div class="error-msg">Please enter your country.</div>
+            </div>
+            <div class="field full">
+              <label for="qContactMethod">Preferred Contact Method</label>
+              <select id="qContactMethod" name="preferredContact">
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Phone call">Phone call</option>
+                <option value="Email">Email</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Vehicle fields -->
+          <div class="conditional-group active" id="group-vehicle">
+            <div class="field"><label for="vMake">Make</label><input type="text" id="vMake" name="vehicleMake"></div>
+            <div class="field"><label for="vModel">Model</label><input type="text" id="vModel" name="vehicleModel"></div>
+            <div class="field"><label for="vYear">Year or Year Range</label><input type="text" id="vYear" name="vehicleYear"></div>
+            <div class="field"><label for="vBudget">Budget &amp; Currency</label><input type="text" id="vBudget" name="budget" placeholder="e.g. 8000 USD"></div>
+            <div class="field"><label for="vCondition">New or Used Preference</label>
+              <select id="vCondition" name="vehicleCondition"><option value="New">New</option><option value="Used">Used</option><option value="Either">Either</option></select>
+            </div>
+            <div class="field full"><label for="vNotes">Additional Requirements</label><textarea id="vNotes" name="vehicleNotes"></textarea></div>
+          </div>
+
+          <!-- Spare parts fields -->
+          <div class="conditional-group" id="group-parts">
+            <div class="field"><label for="spMake">Vehicle Make</label><input type="text" id="spMake" name="partsVehicleMake"></div>
+            <div class="field"><label for="spModel">Vehicle Model</label><input type="text" id="spModel" name="partsVehicleModel"></div>
+            <div class="field"><label for="spYear">Vehicle Year</label><input type="text" id="spYear" name="partsVehicleYear"></div>
+            <div class="field"><label for="spPart">Part Name or Number</label><input type="text" id="spPart" name="partNameOrNumber"></div>
+            <div class="field"><label for="spCondition">New or Used Preference</label>
+              <select id="spCondition" name="partsCondition"><option value="New">New</option><option value="Used">Used</option><option value="Either">Either</option></select>
+            </div>
+            <div class="field"><label for="spQty">Quantity</label><input type="number" id="spQty" name="partsQuantity" min="1" value="1"></div>
+            <div class="field full"><label for="spNotes">Additional Details</label><textarea id="spNotes" name="partsNotes"></textarea></div>
+          </div>
+
+          <!-- Shipping fields -->
+          <div class="conditional-group" id="group-shipping">
+            <div class="field full"><label for="shItem">Vehicle or Item Description</label><input type="text" id="shItem" name="shippingItem"></div>
+            <div class="field"><label for="shLocation">Current Location (if known)</label><input type="text" id="shLocation" name="currentLocation"></div>
+            <div class="field"><label for="shDestination">Destination in Nigeria</label><input type="text" id="shDestination" name="destination"></div>
+            <div class="field full"><label for="shPurchased">Has the item already been purchased?</label>
+              <select id="shPurchased" name="alreadyPurchased"><option value="Yes">Yes</option><option value="No">No</option></select>
+            </div>
+            <div class="field full"><label for="shNotes">Additional Requirements</label><textarea id="shNotes" name="shippingNotes"></textarea></div>
+          </div>
+
+          <!-- General -->
+          <div class="conditional-group" id="group-general">
+            <div class="field full"><label for="gNotes">Please describe your enquiry</label><textarea id="gNotes" name="generalNotes"></textarea></div>
+          </div>
+
+          <div style="margin-top:24px;">
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+          </div>
+        </form>
+
+        <div class="fallback-panel" id="fallbackPanel">
+          <h3>Your request is ready</h3>
+          <p id="fallbackMsg">Online form delivery has not yet been configured for this website, so your request has not been automatically emailed. Please send your details using one of the options below.</p>
+          <div class="fallback-actions">
+            <a class="btn btn-primary" id="fallbackWa" href="#" target="_blank" rel="noopener">Send via WhatsApp</a>
+            <a class="btn btn-outline" id="fallbackEmail" href="#">Send via Email</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <h3>Your Privacy</h3>
+        <p>Information you submit is used only to respond to your enquiry. See our <a href="privacy.html" style="color:var(--red);">Privacy Policy</a> for details. Do not include sensitive financial or payment information in this form.</p>
+        <h3>Prefer to talk directly?</h3>
+        <p>USA: <a href="tel:+15163010609" style="color:var(--red);">+1 (516) 301-0609</a><br>
+        Nigeria: <a href="tel:+2348188503274" style="color:var(--red);">+234 818 850 3274</a><br>
+        Email: <a href="mailto:info@leyeautogroup.com" style="color:var(--red);">info@leyeautogroup.com</a></p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Leye Auto Group LLC</h3>
+      <p style="font-size:.9rem;">We help customers source vehicles and automotive spare parts in the United States and arrange vehicle shipping to Nigeria.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="vehicles.html">Vehicles</a>
+      <a href="spare-parts.html">Spare Parts</a><a href="shipping.html">Shipping &amp; Export</a>
+      <a href="request-a-quote.html">Request a Quote</a><a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="tel:+15163010609">USA: +1 (516) 301-0609</a>
+      <a href="tel:+2348188503274">Nigeria: +234 818 850 3274</a>
+      <a href="mailto:info@leyeautogroup.com">info@leyeautogroup.com</a>
+      <a href="https://wa.me/15163010609" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+    <div>
+      <h3>Offices</h3>
+      <p style="font-size:.88rem;">USA: 3433 W 10th Street, Indianapolis, IN 46222, USA</p>
+      <p style="font-size:.88rem;">Nigeria: Opposite Mingles Palace Hotel, Monatan, Ibadan, Oyo State, Nigeria <em>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a></p>
+    <p>&copy; <span id="year"></span> Leye Auto Group LLC. All rights reserved.</p>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/15163010609?text=Hello%20Leye%20Auto%20Group%20LLC%2C%20I%20would%20like%20to%20request%20a%20quote." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 2.9C8.8 2.9 3 8.7 3 15.9c0 2.6.7 5 1.9 7.1L3 29l6.2-1.9c2 .9 4.3 1.4 6.8 1.4 7.2 0 13-5.8 13-13S23.2 2.9 16 2.9zm0 23.6c-2.2 0-4.3-.6-6.1-1.6l-.4-.2-4 1.2 1.2-3.9-.3-.4a11.3 11.3 0 0 1-1.7-6c0-6.3 5.1-11.4 11.3-11.4s11.3 5.1 11.3 11.4-5.1 11.3-11.3 11.3zm6.2-8.4c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+<script>
+var FORM_ENDPOINT_PLACEHOLDER = "REPLACE_WITH_REAL_ENDPOINT";
+var form = document.getElementById('quoteForm');
+var fallback = document.getElementById('fallbackPanel');
+var groups = {
+  "Vehicle sourcing": document.getElementById('group-vehicle'),
+  "Spare-parts sourcing": document.getElementById('group-parts'),
+  "Shipping enquiry": document.getElementById('group-shipping'),
+  "General enquiry": document.getElementById('group-general')
+};
+function updateGroups(){
+  var selected = form.querySelector('input[name="requestType"]:checked').value;
+  Object.keys(groups).forEach(function(key){
+    groups[key].classList.toggle('active', key===selected);
+  });
+}
+form.querySelectorAll('input[name="requestType"]').forEach(function(r){r.addEventListener('change', updateGroups);});
+updateGroups();
+
+function validate(){
+  var valid = true;
+  form.querySelectorAll('.field-grid [required]').forEach(function(el){
+    var wrap = el.closest('.field');
+    var ok = el.value.trim() !== '';
+    if(el.type==='email' && ok){ ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value); }
+    wrap.classList.toggle('invalid', !ok);
+    if(!ok) valid = false;
+  });
+  return valid;
+}
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  if(!validate()) return;
+  var data = Object.fromEntries(new FormData(form).entries());
+
+  var lines = ['Hello Leye Auto Group LLC, I would like to submit a request.',
+    'Type: '+data.requestType, 'Name: '+data.name, 'Phone: '+data.phone, 'Country: '+data.country];
+  if(data.requestType==='Vehicle sourcing'){
+    lines.push('Vehicle: '+(data.vehicleYear||'')+' '+(data.vehicleMake||'')+' '+(data.vehicleModel||''));
+    lines.push('Budget: '+(data.budget||'N/A'));
+    lines.push('Condition: '+(data.vehicleCondition||''));
+    lines.push('Notes: '+(data.vehicleNotes||'N/A'));
+  } else if(data.requestType==='Spare-parts sourcing'){
+    lines.push('Vehicle: '+(data.partsVehicleYear||'')+' '+(data.partsVehicleMake||'')+' '+(data.partsVehicleModel||''));
+    lines.push('Part: '+(data.partNameOrNumber||''));
+    lines.push('Condition: '+(data.partsCondition||''));
+    lines.push('Quantity: '+(data.partsQuantity||''));
+    lines.push('Notes: '+(data.partsNotes||'N/A'));
+  } else if(data.requestType==='Shipping enquiry'){
+    lines.push('Item: '+(data.shippingItem||''));
+    lines.push('Current location: '+(data.currentLocation||'N/A'));
+    lines.push('Destination: '+(data.destination||''));
+    lines.push('Already purchased: '+(data.alreadyPurchased||''));
+    lines.push('Notes: '+(data.shippingNotes||'N/A'));
+  } else {
+    lines.push('Enquiry: '+(data.generalNotes||'N/A'));
+  }
+  var waText = encodeURIComponent(lines.join('\n'));
+  var emailBody = encodeURIComponent(lines.join('\n'));
+
+  var action = form.getAttribute('action');
+  if(!action || action.indexOf(FORM_ENDPOINT_PLACEHOLDER) !== -1){
+    document.getElementById('fallbackWa').href = 'https://wa.me/15163010609?text='+waText;
+    document.getElementById('fallbackEmail').href = 'mailto:info@leyeautogroup.com?subject=Quote%20Request&body='+emailBody;
+    fallback.classList.add('show');
+    fallback.scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+
+  fetch(action, {method:'POST', body:new FormData(form), headers:{'Accept':'application/json'}})
+    .then(function(res){
+      if(res.ok){
+        form.innerHTML = '<p style="color:#2e7d32;font-weight:600;">Thank you — your request has been submitted. We will contact you soon.</p>';
+      } else {
+        document.getElementById('fallbackMsg').textContent = 'There was a problem submitting the form automatically. Please use one of the options below.';
+        document.getElementById('fallbackWa').href = 'https://wa.me/15163010609?text='+waText;
+        document.getElementById('fallbackEmail').href = 'mailto:info@leyeautogroup.com?subject=Quote%20Request&body='+emailBody;
+        fallback.classList.add('show');
+      }
+    }).catch(function(){
+      document.getElementById('fallbackMsg').textContent = 'There was a problem submitting the form automatically. Please use one of the options below.';
+      document.getElementById('fallbackWa').href = 'https://wa.me/15163010609?text='+waText;
+      document.getElementById('fallbackEmail').href = 'mailto:info@leyeautogroup.com?subject=Quote%20Request&body='+emailBody;
+      fallback.classList.add('show');
+    });
+});
+
+var toggle=document.getElementById('menuToggle');
+var nav=document.getElementById('primaryNav');
+function closeMenu(){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');}
+function openMenu(){nav.classList.add('open');toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-label','Close menu');}
+toggle.addEventListener('click',function(){nav.classList.contains('open')?closeMenu():openMenu();});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

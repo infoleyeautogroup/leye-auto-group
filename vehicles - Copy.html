@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vehicle Inventory | Leye Auto Group LLC</title>
+<meta name="description" content="Browse verified vehicle listings sourced by Leye Auto Group LLC in the USA, or submit a request for a specific vehicle.">
+<link rel="canonical" href="https://leyeautogroup.com/vehicles.html">
+<meta property="og:title" content="Vehicle Inventory | Leye Auto Group LLC">
+<meta property="og:description" content="Verified vehicles sourced in the USA by Leye Auto Group LLC.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leyeautogroup.com/vehicles.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%23101B2B'/%3E%3Cpath d='M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13M3 13v4h18v-4M3 13h18' stroke='%23C73535' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{--navy:#101B2B;--charcoal:#202833;--white:#FFFFFF;--light:#F3F5F7;--silver:#B8C0C9;--red:#C73535;--red-dark:#a32b2b;--radius:10px;--shadow:0 10px 30px rgba(16,27,43,0.12);--transition:0.25s ease;}
+*,*::before,*::after{box-sizing:border-box;}
+body{margin:0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;color:var(--charcoal);background:var(--white);line-height:1.6;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{color:var(--navy);margin:0 0 .5em;}
+p{margin:0 0 1em;}
+.container{max-width:1200px;margin:0 auto;padding:0 20px;}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px;}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--red);color:#fff;padding:10px 16px;z-index:2000;}
+.skip-link:focus{left:0;top:0;}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important;}}
+header.site-header{position:sticky;top:0;z-index:1000;background:var(--navy);box-shadow:var(--shadow);}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:1.1rem;}
+.logo small{display:block;font-size:.58rem;letter-spacing:1.5px;color:var(--silver);font-weight:400;}
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+nav.primary-nav{display:flex;gap:2px;}
+nav.primary-nav a{color:var(--silver);padding:10px 13px;border-radius:6px;font-size:.92rem;font-weight:500;transition:var(--transition);white-space:nowrap;}
+nav.primary-nav a:hover,nav.primary-nav a:focus-visible{color:#fff;background:rgba(255,255,255,.08);}
+nav.primary-nav a[aria-current="page"]{color:#fff;background:var(--red);}
+@media (max-width:980px){
+  nav.primary-nav{position:fixed;top:0;right:0;height:100vh;width:min(300px,85vw);background:var(--navy);flex-direction:column;padding:90px 22px 22px;transform:translateX(100%);transition:transform .3s ease;gap:4px;overflow-y:auto;}
+  nav.primary-nav.open{transform:translateX(0);}
+  .menu-toggle{display:flex;}
+}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:8px;font-weight:600;font-size:.9rem;cursor:pointer;border:2px solid transparent;transition:var(--transition);}
+.btn-primary{background:var(--red);color:#fff;}
+.btn-primary:hover{background:var(--red-dark);}
+.btn-outline{background:transparent;border-color:var(--navy);color:var(--navy);}
+.btn-outline:hover{background:var(--navy);color:#fff;}
+.page-hero{background:var(--navy);color:#fff;padding:60px 0 40px;}
+.page-hero p{color:var(--silver);max-width:650px;}
+section{padding:50px 0;}
+.section-light{background:var(--light);}
+.filter-bar{background:var(--light);border-radius:var(--radius);padding:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;align-items:end;margin-bottom:34px;}
+.filter-bar label{display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:6px;}
+.filter-bar select,.filter-bar input{width:100%;padding:10px;border:1px solid #cfd5dc;border-radius:6px;font-size:.9rem;background:#fff;}
+.filter-bar .filter-actions{display:flex;gap:8px;}
+.results-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:10px;}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px;}
+.vcard{background:#fff;border:1px solid #e7e9ec;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform var(--transition);}
+.vcard:hover{transform:translateY(-4px);}
+.vcard .photo{aspect-ratio:4/3;background:var(--light);display:flex;align-items:center;justify-content:center;color:var(--silver);}
+.vcard .body{padding:18px;flex:1;display:flex;flex-direction:column;}
+.vcard h3{font-size:1.05rem;margin-bottom:4px;}
+.vcard .meta{display:flex;flex-wrap:wrap;gap:6px;font-size:.78rem;color:var(--charcoal);margin-bottom:10px;}
+.vcard .meta span{background:var(--light);padding:3px 9px;border-radius:20px;}
+.vcard .price{color:var(--red);font-weight:700;margin-bottom:12px;}
+.vcard .actions{display:flex;gap:8px;margin-top:auto;}
+.vcard .actions a{flex:1;text-align:center;font-size:.85rem;padding:10px;}
+.empty-state{background:var(--light);border:2px dashed var(--silver);border-radius:var(--radius);padding:50px 24px;text-align:center;max-width:700px;margin:0 auto;}
+.empty-state .icon-wrap{width:64px;height:64px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;}
+footer.site-footer{background:var(--charcoal);color:var(--silver);padding:50px 0 20px;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;}
+.footer-grid h3{color:#fff;font-size:1.02rem;margin-bottom:14px;}
+.footer-grid a{display:block;color:var(--silver);padding:4px 0;font-size:.92rem;}
+.footer-grid a:hover{color:#fff;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:20px;text-align:center;font-size:.83rem;}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);z-index:900;}
+.whatsapp-float:hover{transform:scale(1.08);}
+@media(max-width:480px){.whatsapp-float{width:48px;height:48px;bottom:14px;right:14px;}}
+
+/* ================================================================
+   VEHICLE CATEGORY BROWSE SECTION (scoped with "cat-" prefix)
+   ================================================================ */
+.cat-section{padding-top:50px;}
+.cat-hero{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--navy);color:#fff;padding:46px 30px;margin-bottom:40px;box-shadow:var(--shadow);}
+.cat-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.4;}
+.cat-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,27,43,.85),rgba(16,27,43,.93));z-index:0;}
+.cat-hero-content{position:relative;z-index:1;max-width:640px;}
+.cat-hero-content h2{color:#fff;}
+.cat-hero-content p{color:var(--silver);margin-bottom:0;}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;}
+.cat-card{background:#fff;border:1px solid #e7e9ec;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform var(--transition);}
+.cat-card:hover{transform:translateY(-4px);}
+.cat-img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--light);border-bottom:2px dashed var(--silver);}
+.cat-body{padding:18px;display:flex;flex-direction:column;flex:1;}
+.cat-body h3{font-size:1.02rem;}
+.cat-body p{font-size:.88rem;flex:1;}
+.cat-body .btn{align-self:flex-start;margin-top:auto;}
+
+/* CTA band linking to Request a Quote */
+.cta-band{background:var(--navy);color:#fff;text-align:center;border-radius:var(--radius);padding:50px 24px;margin-top:10px;}
+.cta-band h2{color:#fff;}
+.cta-band p{color:var(--silver);max-width:600px;margin-left:auto;margin-right:auto;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo" aria-label="Leye Auto Group LLC home">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13M3 13v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5M3 13h18" stroke="#C73535" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="17.5" r="1.4" fill="#F3F5F7"/><circle cx="16.5" cy="17.5" r="1.4" fill="#F3F5F7"/></svg>
+      <span>LEYE AUTO GROUP<small>LLC &middot;
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="vehicles.html" aria-current="page">Vehicles</a>
+      <a href="spare-parts.html">Spare Parts</a>
+      <a href="shipping.html">Shipping &amp; Export</a>
+      <a href="request-a-quote.html">Request a Quote</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Vehicle Inventory</h1>
+      <p>Browse verified vehicles sourced by Leye Auto Group LLC in the United States. If you don't see what you're looking for, tell us and we'll help you find it.</p>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       VEHICLE CATEGORY BROWSE SECTION
+       Placeholder images only — these represent vehicle TYPES we can
+       help source, not specific vehicles currently in stock.
+       ================================================================ -->
+  <section class="cat-section section-light">
+    <div class="container">
+
+      <div class="cat-hero">
+        <!-- PLACEHOLDER: replace with a genuine Leye Auto Group LLC vehicle yard photograph -->
+        <img class="cat-hero-img" src="YARDS OF CARS.png" alt="Placeholder: genuine Leye Auto Group LLC vehicle yard photograph to be supplied">
+        <div class="cat-hero-overlay" aria-hidden="true"></div>
+        <div class="cat-hero-content">
+          <h2>Browse Vehicles by Category</h2>
+          <p>These categories represent the types of vehicles we help source from the United States. They do not represent specific vehicles currently in stock availability, pricing, and condition are always confirmed directly with you.</p>
+        </div>
+      </div>
+
+      <div class="cat-grid">
+        <article class="cat-card">
+          <img class="cat-img" src="FAMILY CARS.png" alt="Placeholder image: family cars">
+          <div class="cat-body">
+            <h3>Family Cars</h3>
+            <p>Reliable, practical vehicles suited to everyday family use.</p>
+            <a class="btn btn-outline" href="request-a-quote.html?category=Family%20Car">Request This Category</a>
+          </div>
+        </article>
+        <article class="cat-card">
+          <img class="cat-img" src="SUVs.png" alt="Placeholder image: SUVs and crossovers">
+          <div class="cat-body">
+            <h3>SUVs &amp; Crossovers</h3>
+            <p>Spacious, higher-riding vehicles for families and tougher roads.</p>
+            <a class="btn btn-outline" href="request-a-quote.html?category=SUV%2FCrossover">Request This Category</a>
+          </div>
+        </article>
+        <article class="cat-card">
+          <img class="cat-img" src="SUVAN.png" alt="Placeholder image: sedans">
+          <div class="cat-body">
+            <h3>Sedans</h3>
+            <p>Comfortable, fuel-efficient cars suited to everyday driving.</p>
+            <a class="btn btn-outline" href="request-a-quote.html?category=Sedan">Request This Category</a>
+          </div>
+        </article>
+        <article class="cat-card">
+          <img class="cat-img" src="TRUCK.png" alt="Placeholder image: pickup trucks">
+          <div class="cat-body">
+            <h3>Pickup Trucks</h3>
+            <p>Rugged trucks suited to work, cargo, and tougher terrain.</p>
+            <a class="btn btn-outline" href="request-a-quote.html?category=Pickup%20Truck">Request This Category</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="note" style="text-align:center;max-width:700px;margin:26px auto 0;color:#5a6472;font-size:.85rem;">These images are placeholders representing vehicle categories only. No make, model, year, mileage, price, or availability should be assumed until confirmed directly with Leye Auto Group LLC.</p>
+    </div>
+  </section>
+
+
+
+  <!-- ================================================================
+       CTA — Button leading to the Request a Quote page
+       ================================================================ -->
+  <section>
+    <div class="container">
+      <div class="cta-band">
+        <h2>Didn't Find the Right Vehicle?</h2>
+        <p>Tell us the make, model, budget, and condition you're looking for, and we'll help source it from the United States.</p>
+        <a class="btn btn-primary" href="request-a-quote.html">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Leye Auto Group LLC</h3>
+      <p style="font-size:.9rem;">We help customers source vehicles and automotive spare parts in the United States and arrange vehicle shipping to Africa.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="vehicles.html">Vehicles</a>
+      <a href="spare-parts.html">Spare Parts</a><a href="shipping.html">Shipping &amp; Export</a>
+      <a href="request-a-quote.html">Request a Quote</a><a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="tel:+15163010609">USA: +1 (516) 301-0609</a>
+      <a href="tel:+2348188503274">Nigeria: +234 818 850 3274</a>
+      <a href="mailto:info@leyeautogroup.com">info@leyeautogroup.com</a>
+      <a href="https://wa.me/15163010609" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+    <div>
+      <h3>Offices</h3>
+      <p style="font-size:.88rem;">USA: 3433 W 10th Street, Indianapolis, IN 46222, USA</p>
+      <p style="font-size:.88rem;">Nigeria: Opposite Mingles Palace Hotel, Monatan, Ibadan, Oyo State, Nigeria.
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a></p>
+    <p>&copy; <span id="year"></span> Leye Auto Group LLC. All rights reserved.</p>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/15163010609?text=Hello%20Leye%20Auto%20Group%20LLC%2C%20I%20would%20like%20to%20enquire%20about%20sourcing%20a%20vehicle%20from%20the%20USA." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 2.9C8.8 2.9 3 8.7 3 15.9c0 2.6.7 5 1.9 7.1L3 29l6.2-1.9c2 .9 4.3 1.4 6.8 1.4 7.2 0 13-5.8 13-13S23.2 2.9 16 2.9zm0 23.6c-2.2 0-4.3-.6-6.1-1.6l-.4-.2-4 1.2 1.2-3.9-.3-.4a11.3 11.3 0 0 1-1.7-6c0-6.3 5.1-11.4 11.3-11.4s11.3 5.1 11.3 11.4-5.1 11.3-11.3 11.3zm6.2-8.4c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+/* ===================================================================
+   VEHICLE INVENTORY DATA
+   -------------------------------------------------------------------
+   Add real, verified vehicles to this array. Do NOT add fictitious
+   vehicles. Each vehicle needs a unique "id" used to build the
+   details link: vehicle-details.html?id=THE_ID
+   Fields marked optional can be omitted if not verified; the card
+   will simply not display that field.
+   -------------------------------------------------------------------
+   Example of how to add a real vehicle (copy and edit):
+
+   {
+     id: "2017-toyota-camry-001",
+     make: "Toyota",
+     model: "Camry",
+     year: 2017,
+     condition: "Used",          // "New" or "Used"
+     mileage: "62,000 miles",    // optional
+     transmission: "Automatic",  // optional
+     fuelType: "Petrol",         // optional
+     photo: "assets/images/2017-toyota-camry-001-1.jpg",
+     available: true
+   }
+=================================================================== */
+var VEHICLES = [
+  // Add verified vehicle objects here.
+];
+
+var grid = document.getElementById('vehicleGrid');
+var emptyState = document.getElementById('emptyState');
+var resultsCount = document.getElementById('resultsCount');
+var fMake = document.getElementById('fMake');
+var fModel = document.getElementById('fModel');
+var fYear = document.getElementById('fYear');
+var fCondition = document.getElementById('fCondition');
+
+function uniqueValues(key){
+  var vals = VEHICLES.map(function(v){return v[key];}).filter(Boolean);
+  return Array.from(new Set(vals));
+}
+function populateSelect(select, values){
+  values.sort().forEach(function(v){
+    var opt = document.createElement('option');
+    opt.value = v; opt.textContent = v;
+    select.appendChild(opt);
+  });
+}
+populateSelect(fMake, uniqueValues('make'));
+populateSelect(fModel, uniqueValues('model'));
+populateSelect(fYear, uniqueValues('year').map(String));
+populateSelect(fCondition, uniqueValues('condition'));
+if(!VEHICLES.length){
+  [fMake,fModel,fYear,fCondition].forEach(function(s){s.disabled=true;});
+}
+
+function vehicleCard(v){
+  var metaParts = [];
+  if(v.mileage) metaParts.push('<span>'+v.mileage+'</span>');
+  if(v.condition) metaParts.push('<span>'+v.condition+'</span>');
+  if(v.transmission) metaParts.push('<span>'+v.transmission+'</span>');
+  if(v.fuelType) metaParts.push('<span>'+v.fuelType+'</span>');
+  var waMsg = encodeURIComponent('Hello Leye Auto Group LLC, I am interested in the '+v.year+' '+v.make+' '+v.model+' (ID: '+v.id+').');
+  return '<article class="vcard">'+
+    '<div class="photo">'+(v.photo ? '<img loading="lazy" src="'+v.photo+'" alt="'+v.year+' '+v.make+' '+v.model+'">' : 'Photo pending')+'</div>'+
+    '<div class="body">'+
+      '<h3>'+v.year+' '+v.make+' '+v.model+'</h3>'+
+      '<div class="meta">'+metaParts.join('')+'</div>'+
+      '<div class="price">Price on request</div>'+
+      '<p style="font-size:.85rem;color:'+(v.available?'#2e7d32':'#a32b2b')+';">'+(v.available?'Available':'Status: confirm availability')+'</p>'+
+      '<div class="actions">'+
+        '<a class="btn btn-outline" href="vehicle-details.html?id='+encodeURIComponent(v.id)+'">Details</a>'+
+        '<a class="btn btn-primary" href="https://wa.me/15163010609?text='+waMsg+'" target="_blank" rel="noopener">Enquire</a>'+
+      '</div>'+
+    '</div></article>';
+}
+
+function render(){
+  var make=fMake.value, model=fModel.value, year=fYear.value, cond=fCondition.value;
+  var filtered = VEHICLES.filter(function(v){
+    return (!make || v.make===make) && (!model || v.model===model) &&
+           (!year || String(v.year)===year) && (!cond || v.condition===cond);
+  });
+  grid.innerHTML = filtered.map(vehicleCard).join('');
+  resultsCount.textContent = filtered.length + (filtered.length===1 ? ' vehicle found' : ' vehicles found');
+  emptyState.style.display = filtered.length ? 'none' : 'block';
+  grid.style.display = filtered.length ? 'grid' : 'none';
+}
+document.getElementById('filterForm').addEventListener('submit', function(e){e.preventDefault(); render();});
+document.getElementById('resetFilters').addEventListener('click', function(){
+  fMake.value=''; fModel.value=''; fYear.value=''; fCondition.value=''; render();
+});
+render();
+
+var toggle=document.getElementById('menuToggle');
+var nav=document.getElementById('primaryNav');
+function closeMenu(){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');}
+function openMenu(){nav.classList.add('open');toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-label','Close menu');}
+toggle.addEventListener('click',function(){nav.classList.contains('open')?closeMenu():openMenu();});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});
+document.getElementById('year') && (document.getElementById('year').textContent=new Date().getFullYear());
+</script>
+</body>
+</html>
